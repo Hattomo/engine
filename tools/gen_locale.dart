@@ -60,7 +60,7 @@ Future<Null> main() async {
       assert(section.containsKey('Deprecated'));
       final String comment = section.containsKey('Comment') ? section['Comment'].single : 'deprecated ${section['Deprecated'].single}';
       final String preferredValue = section['Preferred-Value'].single;
-      outputs[type].add('\'$subtag\': \'$preferredValue\', // ${descriptions.join(", ")}; $comment');
+      outputs[type].add("'$subtag': '$preferredValue', // ${descriptions.join(", ")}; $comment");
     }
   }
   print('// Mappings generated for language subtag registry as of $fileDate.');

@@ -56,8 +56,8 @@ export 'engine/(.*)';
 part 'engine/${match.group(1)}';
 '''),
   AllReplacer(
-    'import \'package:js/js.dart\'',
-    'import \'dart:_js_annotations\'',
+    "import 'package:js/js.dart'",
+    "import 'dart:_js_annotations'",
   ),
 ];
 
